@@ -26,8 +26,12 @@ struct StagingView: View {
     var body: some View {
         VStack {
             DefaultParameterView()
+                .padding([.leading, .trailing, .top], 8)
             Divider()
             PhotoCollectionView(viewModel: PhotoCollectionView.ViewModel(photos: photos))
+            Divider()
+            WeaveStatusView()
+                .padding([.leading, .trailing, .bottom], 8)
         }
     }
 }
