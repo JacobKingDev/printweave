@@ -7,17 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02EED6AB2B0175B800009BDA /* StagingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EED6AA2B0175B800009BDA /* StagingViewModel.swift */; };
 		162682EC2AFD6E9300E71764 /* PrintweaveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162682EB2AFD6E9300E71764 /* PrintweaveApp.swift */; };
 		162682F02AFD6E9400E71764 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 162682EF2AFD6E9400E71764 /* Assets.xcassets */; };
 		162682F42AFD6E9400E71764 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 162682F32AFD6E9400E71764 /* Preview Assets.xcassets */; };
 		162682FE2AFD6E9500E71764 /* PrintweaveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162682FD2AFD6E9500E71764 /* PrintweaveTests.swift */; };
 		162683082AFD6E9500E71764 /* PrintweaveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162683072AFD6E9500E71764 /* PrintweaveUITests.swift */; };
 		1626830A2AFD6E9500E71764 /* PrintweaveUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162683092AFD6E9500E71764 /* PrintweaveUITestsLaunchTests.swift */; };
-		1626832B2AFD7BCF00E71764 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1626832A2AFD7BCF00E71764 /* Global.swift */; };
-		1626832D2AFD7C1200E71764 /* EnvironmentValues+Printweave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1626832C2AFD7C1200E71764 /* EnvironmentValues+Printweave.swift */; };
 		1626833F2AFD9B7E00E71764 /* imgPreviewPhoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1626833E2AFD9B7E00E71764 /* imgPreviewPhoto.jpg */; };
-		1626834C2AFE61F500E71764 /* PhotoCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1626834A2AFE61F500E71764 /* PhotoCollectionViewModel.swift */; };
-		1626834D2AFE61F500E71764 /* DefaultParameterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1626834B2AFE61F500E71764 /* DefaultParameterViewModel.swift */; };
 		162683522AFE61FF00E71764 /* Margin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1626834E2AFE61FF00E71764 /* Margin.swift */; };
 		162683532AFE61FF00E71764 /* LayoutParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1626834F2AFE61FF00E71764 /* LayoutParameters.swift */; };
 		162683542AFE61FF00E71764 /* PrintSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162683502AFE61FF00E71764 /* PrintSize.swift */; };
@@ -48,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02EED6AA2B0175B800009BDA /* StagingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StagingViewModel.swift; sourceTree = "<group>"; };
 		162682E82AFD6E9300E71764 /* Printweave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Printweave.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		162682EB2AFD6E9300E71764 /* PrintweaveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintweaveApp.swift; sourceTree = "<group>"; };
 		162682EF2AFD6E9400E71764 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,11 +56,7 @@
 		162683032AFD6E9500E71764 /* PrintweaveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrintweaveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		162683072AFD6E9500E71764 /* PrintweaveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintweaveUITests.swift; sourceTree = "<group>"; };
 		162683092AFD6E9500E71764 /* PrintweaveUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintweaveUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		1626832A2AFD7BCF00E71764 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
-		1626832C2AFD7C1200E71764 /* EnvironmentValues+Printweave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnvironmentValues+Printweave.swift"; sourceTree = "<group>"; };
 		1626833E2AFD9B7E00E71764 /* imgPreviewPhoto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = imgPreviewPhoto.jpg; sourceTree = "<group>"; };
-		1626834A2AFE61F500E71764 /* PhotoCollectionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewModel.swift; sourceTree = "<group>"; };
-		1626834B2AFE61F500E71764 /* DefaultParameterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultParameterViewModel.swift; sourceTree = "<group>"; };
 		1626834E2AFE61FF00E71764 /* Margin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Margin.swift; sourceTree = "<group>"; };
 		1626834F2AFE61FF00E71764 /* LayoutParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutParameters.swift; sourceTree = "<group>"; };
 		162683502AFE61FF00E71764 /* PrintSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrintSize.swift; sourceTree = "<group>"; };
@@ -161,7 +155,6 @@
 				1626833B2AFD97EC00E71764 /* View Models */,
 				162683342AFD8CF100E71764 /* Models */,
 				1626832F2AFD8C5B00E71764 /* Views */,
-				162683182AFD75C700E71764 /* Dependency Injection */,
 				162682EB2AFD6E9300E71764 /* PrintweaveApp.swift */,
 			);
 			path = Sources;
@@ -175,15 +168,6 @@
 				162682F22AFD6E9400E71764 /* Preview Content */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		162683182AFD75C700E71764 /* Dependency Injection */ = {
-			isa = PBXGroup;
-			children = (
-				1626832A2AFD7BCF00E71764 /* Global.swift */,
-				1626832C2AFD7C1200E71764 /* EnvironmentValues+Printweave.swift */,
-			);
-			path = "Dependency Injection";
 			sourceTree = "<group>";
 		};
 		1626832F2AFD8C5B00E71764 /* Views */ = {
@@ -213,8 +197,7 @@
 		1626833B2AFD97EC00E71764 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
-				1626834B2AFE61F500E71764 /* DefaultParameterViewModel.swift */,
-				1626834A2AFE61F500E71764 /* PhotoCollectionViewModel.swift */,
+				02EED6AA2B0175B800009BDA /* StagingViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -353,14 +336,11 @@
 				1626835A2AFE620700E71764 /* PhotoContainer.swift in Sources */,
 				1626835B2AFE620700E71764 /* DefaultParameterView.swift in Sources */,
 				162682EC2AFD6E9300E71764 /* PrintweaveApp.swift in Sources */,
-				1626832D2AFD7C1200E71764 /* EnvironmentValues+Printweave.swift in Sources */,
 				1626835C2AFE620700E71764 /* StagingView.swift in Sources */,
 				162683612AFE64A700E71764 /* WeaveStatus.swift in Sources */,
 				162683542AFE61FF00E71764 /* PrintSize.swift in Sources */,
 				162683552AFE61FF00E71764 /* Photo.swift in Sources */,
-				1626834D2AFE61F500E71764 /* DefaultParameterViewModel.swift in Sources */,
-				1626832B2AFD7BCF00E71764 /* Global.swift in Sources */,
-				1626834C2AFE61F500E71764 /* PhotoCollectionViewModel.swift in Sources */,
+				02EED6AB2B0175B800009BDA /* StagingViewModel.swift in Sources */,
 				162683522AFE61FF00E71764 /* Margin.swift in Sources */,
 				1626835D2AFE620700E71764 /* PhotoCollectionView.swift in Sources */,
 				162683532AFE61FF00E71764 /* LayoutParameters.swift in Sources */,

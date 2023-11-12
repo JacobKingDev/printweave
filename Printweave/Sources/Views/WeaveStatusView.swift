@@ -14,22 +14,21 @@ import SwiftUI
 
 struct WeaveStatusView: View {
     
-    @Binding var status: WeaveStatus
+    @EnvironmentObject var rootViewModel: StagingView.ViewModel
     
     var body: some View {
         HStack {
-            Text(status.description)
+            Text(rootViewModel.status.description)
             Spacer()
             Button("Go!") {
                 
             }
-            .disabled(status == .addPhotos)
+            .disabled(rootViewModel.status == .addPhotos)
         }
         .padding(8)
     }
 }
 
 #Preview {
-    let binding = Binding { WeaveStatus.addPhotos } set: { _ in }
-    return WeaveStatusView(status: binding)
+    WeaveStatusView()
 }

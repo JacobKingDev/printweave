@@ -14,27 +14,22 @@ import SwiftUI
 
 struct StagingView: View {
     
-    @State var status: WeaveStatus = .addPhotos
-    
-    var photos: [Photo] = {
-        var it = [Photo]()
-        let previewImageUrl = Bundle.main.url(forResource: "imgPreviewPhoto", withExtension: "jpg")!
-        for i in 0..<20 {
-            it.append(Photo(sourceUrl: previewImageUrl, printSize: .default))
-        }
-        return it
-    }()
+    @StateObject var viewModel = ViewModel()
     
     var body: some View {
         VStack {
             DefaultParameterView()
                 .padding([.leading, .trailing, .top], 8)
+                .environmentObject(viewModel)
             Divider()
-            PhotoCollectionView(viewModel: PhotoCollectionView.ViewModel(photos: photos), status: $status)
+            PhotoCollectionView()
                 .frame(minHeight: 300)
+                .onDrop(of: ["public.file-url"], delegate: viewModel)
+                .environmentObject(viewModel)
             Divider()
-            WeaveStatusView(status: $status)
+            WeaveStatusView()
                 .padding([.leading, .trailing, .bottom], 8)
+                .environmentObject(viewModel)
         }
     }
 }

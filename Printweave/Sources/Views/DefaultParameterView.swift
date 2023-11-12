@@ -14,20 +14,20 @@ import SwiftUI
 
 struct DefaultParameterView: View {
     
-    @StateObject var viewModel = ViewModel()
+    @EnvironmentObject var rootViewModel: StagingView.ViewModel
     
     var body: some View {
         Form {
             HStack(alignment: .top) {
                 VStack(alignment: .trailing) {
-                    Picker("Paper Size:", selection: $viewModel.layoutParameters.paperSize) {
+                    Picker("Paper Size:", selection: $rootViewModel.layoutParameters.paperSize) {
                         ForEach(PrintSize.allCases, id: \.self) {
                             Text($0.description)
                         }
                     }
                     .pickerStyle(.menu)
                     
-                    Picker(selection: $viewModel.layoutParameters.margin) {
+                    Picker(selection: $rootViewModel.layoutParameters.margin) {
                         ForEach(Margin.allCases, id: \.self) {
                             Text($0.description)
                         }
@@ -38,7 +38,7 @@ struct DefaultParameterView: View {
                     .pickerStyle(.menu)
                 }
                 
-                Picker("Default Print Size:", selection: $viewModel.layoutParameters.printSize) {
+                Picker("Default Print Size:", selection: $rootViewModel.layoutParameters.printSize) {
                     ForEach(PrintSize.allCases, id: \.self) {
                         Text($0.description)
                     }

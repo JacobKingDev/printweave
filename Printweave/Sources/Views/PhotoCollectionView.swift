@@ -14,11 +14,10 @@ import SwiftUI
 
 struct PhotoCollectionView: View {
     
-    @StateObject var viewModel: ViewModel
-    @Binding var status: WeaveStatus
+    @EnvironmentObject var rootViewModel: StagingView.ViewModel
 
     var body: some View {
-        if status == .addPhotos {
+        if rootViewModel.status == .addPhotos {
             Text("You don't have any photos yet, why not add some?")
         }
         else {
@@ -29,7 +28,7 @@ struct PhotoCollectionView: View {
                 
                 ScrollView {
                     LazyVGrid(columns: gridLayout, content: {
-                        ForEach(viewModel.photos) {
+                        ForEach(rootViewModel.photos) {
                             PhotoContainer(photo: $0)
                                 .padding(.all, 8)
                                 .frame(width: itemDimension, height: itemDimension)
@@ -43,13 +42,5 @@ struct PhotoCollectionView: View {
 }
 
 #Preview {
-    let vm = PhotoCollectionView.ViewModel()
-    let previewImageUrl = Bundle.main.url(forResource: "imgPreviewPhoto", withExtension: "jpg")!
-    for _ in 0..<20 {
-        let photo = Photo(sourceUrl: previewImageUrl, printSize: .default)
-        vm.photos.append(photo)
-    }
-    let statusBinding = Binding { return WeaveStatus.readyToWeave(photoCount: 20) } set: { _ in }
-
-    return PhotoCollectionView(viewModel: vm, status: statusBinding)
+    PhotoCollectionView()
 }
