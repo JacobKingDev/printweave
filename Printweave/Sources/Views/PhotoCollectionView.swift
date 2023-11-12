@@ -15,25 +15,30 @@ import SwiftUI
 struct PhotoCollectionView: View {
     
     @StateObject var viewModel: ViewModel
+    @Binding var status: WeaveStatus
 
     var body: some View {
-        GeometryReader { geometry in
-            let itemDimension = 150.0
-            let itemDensity = Int(geometry.size.width / itemDimension)
-            let gridLayout = [GridItem](repeating: GridItem(.flexible()), count: itemDensity)
-            
-            ScrollView {
-                LazyVGrid(columns: gridLayout, content: {
-                    ForEach(viewModel.photos) {
-                        PhotoContainer(photo: $0)
-                            .padding(.all, 8)
-                            .frame(width: itemDimension, height: itemDimension)
-                    }
-                })
-                .padding(16)
+        if status == .addPhotos {
+            Text("You don't have any photos yet, why not add some?")
+        }
+        else {
+            GeometryReader { geometry in
+                let itemDimension = 150.0
+                let itemDensity = Int(geometry.size.width / itemDimension)
+                let gridLayout = [GridItem](repeating: GridItem(.flexible()), count: itemDensity)
+                
+                ScrollView {
+                    LazyVGrid(columns: gridLayout, content: {
+                        ForEach(viewModel.photos) {
+                            PhotoContainer(photo: $0)
+                                .padding(.all, 8)
+                                .frame(width: itemDimension, height: itemDimension)
+                        }
+                    })
+                    .padding(16)
+                }
             }
         }
-        
     }
 }
 
@@ -44,5 +49,7 @@ struct PhotoCollectionView: View {
         let photo = Photo(sourceUrl: previewImageUrl, printSize: .default)
         vm.photos.append(photo)
     }
-    return PhotoCollectionView(viewModel: vm)
+    let statusBinding = Binding { return WeaveStatus.readyToWeave(photoCount: 20) } set: { _ in }
+
+    return PhotoCollectionView(viewModel: vm, status: statusBinding)
 }

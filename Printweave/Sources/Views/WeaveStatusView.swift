@@ -14,7 +14,7 @@ import SwiftUI
 
 struct WeaveStatusView: View {
     
-    @State var status: WeaveStatus = .addPhotos
+    @Binding var status: WeaveStatus
     
     var body: some View {
         HStack {
@@ -30,5 +30,6 @@ struct WeaveStatusView: View {
 }
 
 #Preview {
-    WeaveStatusView()
+    let binding = Binding { WeaveStatus.addPhotos } set: { _ in }
+    return WeaveStatusView(status: binding)
 }

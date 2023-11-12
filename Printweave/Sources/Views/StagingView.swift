@@ -14,6 +14,8 @@ import SwiftUI
 
 struct StagingView: View {
     
+    @State var status: WeaveStatus = .addPhotos
+    
     var photos: [Photo] = {
         var it = [Photo]()
         let previewImageUrl = Bundle.main.url(forResource: "imgPreviewPhoto", withExtension: "jpg")!
@@ -28,9 +30,10 @@ struct StagingView: View {
             DefaultParameterView()
                 .padding([.leading, .trailing, .top], 8)
             Divider()
-            PhotoCollectionView(viewModel: PhotoCollectionView.ViewModel(photos: photos))
+            PhotoCollectionView(viewModel: PhotoCollectionView.ViewModel(photos: photos), status: $status)
+                .frame(minHeight: 300)
             Divider()
-            WeaveStatusView()
+            WeaveStatusView(status: $status)
                 .padding([.leading, .trailing, .bottom], 8)
         }
     }
