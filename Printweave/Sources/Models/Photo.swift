@@ -13,7 +13,7 @@
 import Foundation
 
 
-struct Photo: Identifiable {
+struct Photo: Identifiable, Equatable {
     
     let id = UUID().uuidString
     let sourceUrl: URL
@@ -22,5 +22,9 @@ struct Photo: Identifiable {
     enum PrintSize {
         case `default`
         case custom(Printweave.PrintSize)
+    }
+    
+    static func == (lhs: Photo, rhs: Photo) -> Bool {
+        return lhs.id == rhs.id
     }
 }

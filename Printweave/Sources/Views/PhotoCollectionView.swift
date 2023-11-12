@@ -28,10 +28,19 @@ struct PhotoCollectionView: View {
                 
                 ScrollView {
                     LazyVGrid(columns: gridLayout, content: {
-                        ForEach(rootViewModel.photos) {
-                            PhotoContainer(photo: $0)
+                        ForEach(rootViewModel.photos) { photo in
+                            PhotoContainer(photo: photo)
                                 .padding(.all, 8)
                                 .frame(width: itemDimension, height: itemDimension)
+                                .contextMenu {
+                                    Button {
+                                        self.rootViewModel.photos.removeAll { $0 == photo }
+                                    } label: {
+                                        Text("Remove")
+                                            .foregroundColor(Color.red)
+                                    }
+                                    // TODO: Add default print size override.
+                                }
                         }
                     })
                     .padding(16)

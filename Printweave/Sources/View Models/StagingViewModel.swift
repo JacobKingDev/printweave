@@ -37,7 +37,7 @@ extension StagingView {
                 Task {
                     guard let urlData = try? await provider.loadItem(forTypeIdentifier: "public.file-url", options: nil) as? Data,
                           let url = URL(dataRepresentation: urlData, relativeTo: nil) else {
-                        return
+                        return // TODO: Propagate error up to userland.
                     }
                     photos.append(Photo(sourceUrl: url, printSize: .default))
                 }
