@@ -1,5 +1,5 @@
 //  
-//  PhotoCollectionView.swift
+//  StagingPhotoListView.swift
 //  Printweave
 //
 //  Created on 09/11/2023.
@@ -12,7 +12,7 @@
 
 import SwiftUI
 
-struct PhotoCollectionView: View {
+struct StagingPhotoListView: View {
     
     @EnvironmentObject var rootViewModel: StagingView.ViewModel
 
@@ -29,7 +29,7 @@ struct PhotoCollectionView: View {
                 ScrollView {
                     LazyVGrid(columns: gridLayout, content: {
                         ForEach(rootViewModel.photos) { photo in
-                            PhotoContainer(photo: photo)
+                            StagingPhotoContainerView(photo: photo)
                                 .padding(.all, 8)
                                 .frame(width: itemDimension, height: itemDimension)
                                 .contextMenu {
@@ -58,5 +58,5 @@ struct PhotoCollectionView: View {
 }
 
 #Preview {
-    PhotoCollectionView()
+    StagingPhotoListView()
 }

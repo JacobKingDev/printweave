@@ -19,11 +19,11 @@
 		162683532AFE61FF00E71764 /* LayoutParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1626834F2AFE61FF00E71764 /* LayoutParameters.swift */; };
 		162683542AFE61FF00E71764 /* PrintSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162683502AFE61FF00E71764 /* PrintSize.swift */; };
 		162683552AFE61FF00E71764 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162683512AFE61FF00E71764 /* Photo.swift */; };
-		1626835A2AFE620700E71764 /* PhotoContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162683562AFE620700E71764 /* PhotoContainer.swift */; };
-		1626835B2AFE620700E71764 /* DefaultParameterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162683572AFE620700E71764 /* DefaultParameterView.swift */; };
+		1626835A2AFE620700E71764 /* StagingPhotoContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162683562AFE620700E71764 /* StagingPhotoContainerView.swift */; };
+		1626835B2AFE620700E71764 /* StagingParameterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162683572AFE620700E71764 /* StagingParameterView.swift */; };
 		1626835C2AFE620700E71764 /* StagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162683582AFE620700E71764 /* StagingView.swift */; };
-		1626835D2AFE620700E71764 /* PhotoCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162683592AFE620700E71764 /* PhotoCollectionView.swift */; };
-		1626835F2AFE63F900E71764 /* WeaveStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1626835E2AFE63F900E71764 /* WeaveStatusView.swift */; };
+		1626835D2AFE620700E71764 /* StagingPhotoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162683592AFE620700E71764 /* StagingPhotoListView.swift */; };
+		1626835F2AFE63F900E71764 /* StagingStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1626835E2AFE63F900E71764 /* StagingStatusView.swift */; };
 		162683612AFE64A700E71764 /* WeaveStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162683602AFE64A700E71764 /* WeaveStatus.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,11 +61,11 @@
 		1626834F2AFE61FF00E71764 /* LayoutParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutParameters.swift; sourceTree = "<group>"; };
 		162683502AFE61FF00E71764 /* PrintSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrintSize.swift; sourceTree = "<group>"; };
 		162683512AFE61FF00E71764 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
-		162683562AFE620700E71764 /* PhotoContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoContainer.swift; sourceTree = "<group>"; };
-		162683572AFE620700E71764 /* DefaultParameterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultParameterView.swift; sourceTree = "<group>"; };
+		162683562AFE620700E71764 /* StagingPhotoContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StagingPhotoContainerView.swift; sourceTree = "<group>"; };
+		162683572AFE620700E71764 /* StagingParameterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StagingParameterView.swift; sourceTree = "<group>"; };
 		162683582AFE620700E71764 /* StagingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StagingView.swift; sourceTree = "<group>"; };
-		162683592AFE620700E71764 /* PhotoCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionView.swift; sourceTree = "<group>"; };
-		1626835E2AFE63F900E71764 /* WeaveStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaveStatusView.swift; sourceTree = "<group>"; };
+		162683592AFE620700E71764 /* StagingPhotoListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StagingPhotoListView.swift; sourceTree = "<group>"; };
+		1626835E2AFE63F900E71764 /* StagingStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StagingStatusView.swift; sourceTree = "<group>"; };
 		162683602AFE64A700E71764 /* WeaveStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaveStatus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -173,11 +173,11 @@
 		1626832F2AFD8C5B00E71764 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				162683572AFE620700E71764 /* DefaultParameterView.swift */,
-				162683592AFE620700E71764 /* PhotoCollectionView.swift */,
-				162683562AFE620700E71764 /* PhotoContainer.swift */,
+				162683572AFE620700E71764 /* StagingParameterView.swift */,
+				162683592AFE620700E71764 /* StagingPhotoListView.swift */,
+				162683562AFE620700E71764 /* StagingPhotoContainerView.swift */,
 				162683582AFE620700E71764 /* StagingView.swift */,
-				1626835E2AFE63F900E71764 /* WeaveStatusView.swift */,
+				1626835E2AFE63F900E71764 /* StagingStatusView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -333,8 +333,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1626835A2AFE620700E71764 /* PhotoContainer.swift in Sources */,
-				1626835B2AFE620700E71764 /* DefaultParameterView.swift in Sources */,
+				1626835A2AFE620700E71764 /* StagingPhotoContainerView.swift in Sources */,
+				1626835B2AFE620700E71764 /* StagingParameterView.swift in Sources */,
 				162682EC2AFD6E9300E71764 /* PrintweaveApp.swift in Sources */,
 				1626835C2AFE620700E71764 /* StagingView.swift in Sources */,
 				162683612AFE64A700E71764 /* WeaveStatus.swift in Sources */,
@@ -342,9 +342,9 @@
 				162683552AFE61FF00E71764 /* Photo.swift in Sources */,
 				02EED6AB2B0175B800009BDA /* StagingViewModel.swift in Sources */,
 				162683522AFE61FF00E71764 /* Margin.swift in Sources */,
-				1626835D2AFE620700E71764 /* PhotoCollectionView.swift in Sources */,
+				1626835D2AFE620700E71764 /* StagingPhotoListView.swift in Sources */,
 				162683532AFE61FF00E71764 /* LayoutParameters.swift in Sources */,
-				1626835F2AFE63F900E71764 /* WeaveStatusView.swift in Sources */,
+				1626835F2AFE63F900E71764 /* StagingStatusView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

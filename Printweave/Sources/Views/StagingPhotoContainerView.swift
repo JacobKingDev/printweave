@@ -1,5 +1,5 @@
 //  
-//  PhotoContainer.swift
+//  StagingPhotoContainerView.swift
 //  Printweave
 //
 //  Created on 09/11/2023.
@@ -12,7 +12,7 @@
 
 import SwiftUI
 
-struct PhotoContainer: View {
+struct StagingPhotoContainerView: View {
     
     var photo: Photo
     
@@ -29,5 +29,5 @@ struct PhotoContainer: View {
 #Preview {
     let previewImageUrl = Bundle.main.url(forResource: "imgPreviewPhoto", withExtension: "jpg")!
     let photo = Photo(sourceUrl: previewImageUrl)
-    return PhotoContainer(photo: photo)
+    return StagingPhotoContainerView(photo: photo)
 }

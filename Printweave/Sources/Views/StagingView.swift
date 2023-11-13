@@ -18,16 +18,16 @@ struct StagingView: View {
     
     var body: some View {
         VStack {
-            DefaultParameterView()
+            StagingParameterView()
                 .padding([.leading, .trailing, .top], 8)
                 .environmentObject(viewModel)
             Divider()
-            PhotoCollectionView()
+            StagingPhotoListView()
                 .frame(minHeight: 300)
                 .onDrop(of: ["public.file-url"], delegate: viewModel)
                 .environmentObject(viewModel)
             Divider()
-            WeaveStatusView()
+            StagingStatusView()
                 .padding([.leading, .trailing, .bottom], 8)
                 .environmentObject(viewModel)
         }

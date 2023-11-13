@@ -1,5 +1,5 @@
 //  
-//  WeaveStatusView.swift
+//  StagingStatusView.swift
 //  Printweave
 //
 //  Created on 10/11/2023.
@@ -12,7 +12,7 @@
 
 import SwiftUI
 
-struct WeaveStatusView: View {
+struct StagingStatusView: View {
     
     @EnvironmentObject var rootViewModel: StagingView.ViewModel
     
@@ -30,5 +30,5 @@ struct WeaveStatusView: View {
 }
 
 #Preview {
-    WeaveStatusView()
+    StagingStatusView()
 }

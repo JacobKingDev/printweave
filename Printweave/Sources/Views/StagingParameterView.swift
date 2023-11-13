@@ -1,5 +1,5 @@
 //  
-//  DefaultParameterView.swift
+//  StagingParameterView.swift
 //  Printweave
 //
 //  Created on 10/11/2023.
@@ -12,7 +12,7 @@
 
 import SwiftUI
 
-struct DefaultParameterView: View {
+struct StagingParameterView: View {
     
     @EnvironmentObject var rootViewModel: StagingView.ViewModel
     
@@ -51,5 +51,5 @@ struct DefaultParameterView: View {
 }
 
 #Preview {
-    DefaultParameterView()
+    StagingParameterView()
 }
