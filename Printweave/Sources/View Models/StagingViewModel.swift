@@ -39,7 +39,7 @@ extension StagingView {
                           let url = URL(dataRepresentation: urlData, relativeTo: nil) else {
                         return // TODO: Propagate error up to userland.
                     }
-                    photos.append(Photo(sourceUrl: url, printSize: .default))
+                    photos.append(Photo(sourceUrl: url))
                 }
             }
             return false

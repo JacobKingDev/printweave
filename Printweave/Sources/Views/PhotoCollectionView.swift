@@ -33,13 +33,20 @@ struct PhotoCollectionView: View {
                                 .padding(.all, 8)
                                 .frame(width: itemDimension, height: itemDimension)
                                 .contextMenu {
+                                    Picker("Print Size", selection: $rootViewModel.layoutParameters.printSizeOverrides[photo.id]) {
+                                        Text("Inherit")
+                                            .tag(Optional<PrintSize>.none)
+                                        ForEach(PrintSize.allCases, id: \.self) { printSize in
+                                            Text(printSize.description)
+                                            .tag(Optional<PrintSize>.some(printSize))
+                                        }
+                                    }
                                     Button {
                                         self.rootViewModel.photos.removeAll { $0 == photo }
                                     } label: {
                                         Text("Remove")
                                             .foregroundColor(Color.red)
                                     }
-                                    // TODO: Add default print size override.
                                 }
                         }
                     })

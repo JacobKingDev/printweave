@@ -28,6 +28,6 @@ struct PhotoContainer: View {
 
 #Preview {
     let previewImageUrl = Bundle.main.url(forResource: "imgPreviewPhoto", withExtension: "jpg")!
-    let photo = Photo(sourceUrl: previewImageUrl, printSize: .default)
+    let photo = Photo(sourceUrl: previewImageUrl)
     return PhotoContainer(photo: photo)
 }

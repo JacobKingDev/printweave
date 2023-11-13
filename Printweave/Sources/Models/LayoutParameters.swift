@@ -15,5 +15,6 @@ import Foundation
 struct LayoutParameters {
     var paperSize: PrintSize = .a4
     var printSize: PrintSize = .sixByFour
+    var printSizeOverrides: [String: PrintSize] = [:]
     var margin: Margin = .moderate
 }

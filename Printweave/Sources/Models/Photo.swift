@@ -11,18 +11,13 @@
 //
 
 import Foundation
-
+import SwiftUI
 
 struct Photo: Identifiable, Equatable {
     
     let id = UUID().uuidString
     let sourceUrl: URL
-    let printSize: PrintSize
-    
-    enum PrintSize {
-        case `default`
-        case custom(Printweave.PrintSize)
-    }
+    var customPrintSize: PrintSize? = nil
     
     static func == (lhs: Photo, rhs: Photo) -> Bool {
         return lhs.id == rhs.id
