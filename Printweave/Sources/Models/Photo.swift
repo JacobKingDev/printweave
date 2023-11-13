@@ -13,11 +13,12 @@
 import Foundation
 import SwiftUI
 
+typealias Photos = [Photo]
+
 struct Photo: Identifiable, Equatable {
     
     let id = UUID().uuidString
     let sourceUrl: URL
-    var customPrintSize: PrintSize? = nil
     
     static func == (lhs: Photo, rhs: Photo) -> Bool {
         return lhs.id == rhs.id

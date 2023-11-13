@@ -17,7 +17,7 @@ import Combine
 extension StagingView {
     @MainActor final class ViewModel: ObservableObject, DropDelegate {
         
-        @Published var photos: [Photo] = []
+        @Published var photos: Photos = []
         @Published var status: WeaveStatus = .addPhotos
         @Published var layoutParameters = LayoutParameters()
         

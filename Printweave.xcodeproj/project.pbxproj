@@ -8,12 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		02EED6AB2B0175B800009BDA /* StagingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EED6AA2B0175B800009BDA /* StagingViewModel.swift */; };
+		02EED6AE2B02399E00009BDA /* PrintLayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EED6AD2B02399E00009BDA /* PrintLayoutHelper.swift */; };
+		02EED6B02B02C89500009BDA /* PrintLayoutHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EED6AF2B02C89500009BDA /* PrintLayoutHelperTests.swift */; };
 		162682EC2AFD6E9300E71764 /* PrintweaveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162682EB2AFD6E9300E71764 /* PrintweaveApp.swift */; };
 		162682F02AFD6E9400E71764 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 162682EF2AFD6E9400E71764 /* Assets.xcassets */; };
 		162682F42AFD6E9400E71764 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 162682F32AFD6E9400E71764 /* Preview Assets.xcassets */; };
-		162682FE2AFD6E9500E71764 /* PrintweaveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162682FD2AFD6E9500E71764 /* PrintweaveTests.swift */; };
-		162683082AFD6E9500E71764 /* PrintweaveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162683072AFD6E9500E71764 /* PrintweaveUITests.swift */; };
-		1626830A2AFD6E9500E71764 /* PrintweaveUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162683092AFD6E9500E71764 /* PrintweaveUITestsLaunchTests.swift */; };
 		1626833F2AFD9B7E00E71764 /* imgPreviewPhoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1626833E2AFD9B7E00E71764 /* imgPreviewPhoto.jpg */; };
 		162683522AFE61FF00E71764 /* Margin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1626834E2AFE61FF00E71764 /* Margin.swift */; };
 		162683532AFE61FF00E71764 /* LayoutParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1626834F2AFE61FF00E71764 /* LayoutParameters.swift */; };
@@ -35,27 +34,18 @@
 			remoteGlobalIDString = 162682E72AFD6E9300E71764;
 			remoteInfo = Printweave;
 		};
-		162683042AFD6E9500E71764 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 162682E02AFD6E9300E71764 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 162682E72AFD6E9300E71764;
-			remoteInfo = Printweave;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		02EED6AA2B0175B800009BDA /* StagingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StagingViewModel.swift; sourceTree = "<group>"; };
+		02EED6AD2B02399E00009BDA /* PrintLayoutHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintLayoutHelper.swift; sourceTree = "<group>"; };
+		02EED6AF2B02C89500009BDA /* PrintLayoutHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintLayoutHelperTests.swift; sourceTree = "<group>"; };
 		162682E82AFD6E9300E71764 /* Printweave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Printweave.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		162682EB2AFD6E9300E71764 /* PrintweaveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintweaveApp.swift; sourceTree = "<group>"; };
 		162682EF2AFD6E9400E71764 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		162682F12AFD6E9400E71764 /* Printweave.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Printweave.entitlements; sourceTree = "<group>"; };
 		162682F32AFD6E9400E71764 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		162682F92AFD6E9500E71764 /* PrintweaveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrintweaveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		162682FD2AFD6E9500E71764 /* PrintweaveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintweaveTests.swift; sourceTree = "<group>"; };
-		162683032AFD6E9500E71764 /* PrintweaveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrintweaveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		162683072AFD6E9500E71764 /* PrintweaveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintweaveUITests.swift; sourceTree = "<group>"; };
-		162683092AFD6E9500E71764 /* PrintweaveUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintweaveUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1626833E2AFD9B7E00E71764 /* imgPreviewPhoto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = imgPreviewPhoto.jpg; sourceTree = "<group>"; };
 		1626834E2AFE61FF00E71764 /* Margin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Margin.swift; sourceTree = "<group>"; };
 		1626834F2AFE61FF00E71764 /* LayoutParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutParameters.swift; sourceTree = "<group>"; };
@@ -84,22 +74,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		162683002AFD6E9500E71764 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02EED6AC2B02398B00009BDA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				02EED6AD2B02399E00009BDA /* PrintLayoutHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		162682DF2AFD6E9300E71764 = {
 			isa = PBXGroup;
 			children = (
 				162682EA2AFD6E9300E71764 /* Printweave */,
 				162682FC2AFD6E9500E71764 /* PrintweaveTests */,
-				162683062AFD6E9500E71764 /* PrintweaveUITests */,
 				162682E92AFD6E9300E71764 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -109,7 +99,6 @@
 			children = (
 				162682E82AFD6E9300E71764 /* Printweave.app */,
 				162682F92AFD6E9500E71764 /* PrintweaveTests.xctest */,
-				162683032AFD6E9500E71764 /* PrintweaveUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,23 +124,15 @@
 		162682FC2AFD6E9500E71764 /* PrintweaveTests */ = {
 			isa = PBXGroup;
 			children = (
-				162682FD2AFD6E9500E71764 /* PrintweaveTests.swift */,
+				02EED6AF2B02C89500009BDA /* PrintLayoutHelperTests.swift */,
 			);
 			path = PrintweaveTests;
-			sourceTree = "<group>";
-		};
-		162683062AFD6E9500E71764 /* PrintweaveUITests */ = {
-			isa = PBXGroup;
-			children = (
-				162683072AFD6E9500E71764 /* PrintweaveUITests.swift */,
-				162683092AFD6E9500E71764 /* PrintweaveUITestsLaunchTests.swift */,
-			);
-			path = PrintweaveUITests;
 			sourceTree = "<group>";
 		};
 		162683162AFD75AD00E71764 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				02EED6AC2B02398B00009BDA /* Helpers */,
 				1626833B2AFD97EC00E71764 /* View Models */,
 				162683342AFD8CF100E71764 /* Models */,
 				1626832F2AFD8C5B00E71764 /* Views */,
@@ -240,24 +221,6 @@
 			productReference = 162682F92AFD6E9500E71764 /* PrintweaveTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		162683022AFD6E9500E71764 /* PrintweaveUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 162683132AFD6E9500E71764 /* Build configuration list for PBXNativeTarget "PrintweaveUITests" */;
-			buildPhases = (
-				162682FF2AFD6E9500E71764 /* Sources */,
-				162683002AFD6E9500E71764 /* Frameworks */,
-				162683012AFD6E9500E71764 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				162683052AFD6E9500E71764 /* PBXTargetDependency */,
-			);
-			name = PrintweaveUITests;
-			productName = PrintweaveUITests;
-			productReference = 162683032AFD6E9500E71764 /* PrintweaveUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -272,10 +235,6 @@
 						CreatedOnToolsVersion = 15.0.1;
 					};
 					162682F82AFD6E9500E71764 = {
-						CreatedOnToolsVersion = 15.0.1;
-						TestTargetID = 162682E72AFD6E9300E71764;
-					};
-					162683022AFD6E9500E71764 = {
 						CreatedOnToolsVersion = 15.0.1;
 						TestTargetID = 162682E72AFD6E9300E71764;
 					};
@@ -296,7 +255,6 @@
 			targets = (
 				162682E72AFD6E9300E71764 /* Printweave */,
 				162682F82AFD6E9500E71764 /* PrintweaveTests */,
-				162683022AFD6E9500E71764 /* PrintweaveUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -319,13 +277,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		162683012AFD6E9500E71764 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -333,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02EED6AE2B02399E00009BDA /* PrintLayoutHelper.swift in Sources */,
 				1626835A2AFE620700E71764 /* StagingPhotoContainerView.swift in Sources */,
 				1626835B2AFE620700E71764 /* StagingParameterView.swift in Sources */,
 				162682EC2AFD6E9300E71764 /* PrintweaveApp.swift in Sources */,
@@ -352,16 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				162682FE2AFD6E9500E71764 /* PrintweaveTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		162682FF2AFD6E9500E71764 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				162683082AFD6E9500E71764 /* PrintweaveUITests.swift in Sources */,
-				1626830A2AFD6E9500E71764 /* PrintweaveUITestsLaunchTests.swift in Sources */,
+				02EED6B02B02C89500009BDA /* PrintLayoutHelperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,11 +315,6 @@
 			isa = PBXTargetDependency;
 			target = 162682E72AFD6E9300E71764 /* Printweave */;
 			targetProxy = 162682FA2AFD6E9500E71764 /* PBXContainerItemProxy */;
-		};
-		162683052AFD6E9500E71764 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 162682E72AFD6E9300E71764 /* Printweave */;
-			targetProxy = 162683042AFD6E9500E71764 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -611,48 +549,6 @@
 			};
 			name = Release;
 		};
-		162683142AFD6E9500E71764 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.jacob-king.PrintweaveUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Printweave;
-			};
-			name = Debug;
-		};
-		162683152AFD6E9500E71764 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.jacob-king.PrintweaveUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Printweave;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -679,15 +575,6 @@
 			buildConfigurations = (
 				162683112AFD6E9500E71764 /* Debug */,
 				162683122AFD6E9500E71764 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		162683132AFD6E9500E71764 /* Build configuration list for PBXNativeTarget "PrintweaveUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				162683142AFD6E9500E71764 /* Debug */,
-				162683152AFD6E9500E71764 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
